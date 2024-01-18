@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="Styles.css">
+    <!--========== HTML2PDF ==========-->
+    <script src="html2pdf.bundle.min.js" defer></script>
+    <title>Blaise Maria James | Resume</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Blaise Maria James</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class='bx bx-palette nav__icon'></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certifications" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certifications
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="Photo.jpg" alt="Blaise Maria James" class="home__img">
+                            <h1 class="home__title">BLAISE MARIA JAMES</h1>
+                            <h3 class="home__profession">Web Developer</h3>
+                            <div>
+                                <a download="" href="Resume.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> Warangal Urban, Telangana
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> blaisemariajamespalackeel@gmail.com
+                            </span>
+                            <span class="home__information phone-number">
+                                <i class="bx bx-phone home__icon"></i> +91 9876543210
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button" style="font-size: small;"> Download CV</i>
+                </section>
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">Social</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://linkedin.com/in/blaise-maria-james" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i> Linkedin
+                        </a>
+                        <a href="https://github.com/BlaiseMariaJames" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i> Github
+                        </a>
+                        <a href="https://twitter.com/blazemariajames" target="_blank" class="social__link">
+                            <i class='bx bxl-twitter social__icon'></i> Twitter
+                        </a>
+                        <a href="https://www.leetcode.com/blaisemariajamespalackeel" target="_blank"
+                            class="social__link">
+                            <i class='bx bx-code-alt social__icon'></i> Leetcode
+                        </a>
+                        <a href="https://www.codechef.com/users/blaise_123" target="_blank" class="social__link">
+                            <i class='bx bx-code social__icon'></i> Codechef
+                        </a>
+                        <a href="https://codeforces.com/profile/blaise_maria_james" target="_blank"
+                            class="social__link">
+                            <i class='bx bx-code-block social__icon'></i> Codeforces
+                        </a>
+                    </div>
+                </section>
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile__description">
+                        A motivated <b>Full-Stack Web Development enthusiast</b> with a passion for coding and a
+                        strong work ethic. Eager to contribute to a dynamic team and gain valuable experience. 
+                        Well-rounded skills and a focus on continuous growth. Excited for hands-on opportunities
+                        to learn and make a positive impact.
+                    </p>
+                </section>
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education__container">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">BACHELOR OF TECHNOLOGY AND SCIENCE</h3>
+                                <span class="education__institution">Kakatiya Institute of Technology and Science</span>
+                                <span class="education__year">2020 - 2024</span>
+                                <span class="education__grade">CGPA: 9.13 (Upto 6th semester)</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">INTERMEDIATE</h3>
+                                <span class="education__institution">Sri Chaitanya Junior College</span>
+                                <span class="education__year">2018 - 2020</span>
+                                <span class="education__grade">Percentage: 92.2%</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">SCHOOL</h3>
+                                <span class="education__institution">St. Gabriel's High School</span>
+                                <span class="education__year">2006 - 2018</span>
+                                <span class="education__grade">CGPA: 9.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">Languages</h4>
+                        <ul class="skills__data">
+                            <li>
+                                <i class="bx bxl-c-plus-plus skills__icon"></i><b>C++</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-java skills__icon"></i><b>Java</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-python skills__icon"></i><b>Python</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-javascript skills__icon"></i><b>Javascript</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-typescript skills__icon"></i><b>Typescript</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">Front end</h4>
+                        <ul class="skills__data">
+                            <li>
+                                <i class="bx bxl-html5 skills__icon"></i><b>HTML5</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-css3 skills__icon"></i><b>CSS3</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-angular skills__icon"></i><b>Angular</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-react skills__icon"></i><b>React</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">Back end & Frameworks</h4>
+                        <ul class="skills__data">
+                            <li>
+                                <i class="bx bxl-nodejs skills__icon"></i><b>Node JS</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                            <li>
+                                <i class="bx bxs-server skills__icon"></i><b>Express JS</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">Databases</h4>
+                        <ul class="skills__data">
+                            <li>
+                                <i class="bx bxs-data skills__icon"></i><b>MySQL/Oracle/SQLite</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxl-mongodb skills__icon"></i><b>MongoDB</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">Others</h4>
+                        <ul class="skills__data">
+                            <li>
+                                <i class="bx bxl-github skills__icon"></i><b>Git & Github</b><span
+                                    class="skills__level">Intermediate</span>
+                            </li>
+                            <li>
+                                <i class="bx bxs-terminal skills__icon"></i><b>Unix Scripting</b><span
+                                    class="skills__level">Beginner</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__content bd-grid">
+                        <h4 class="skills__title">CS Fundamentals</h4>
+                        <ul class="skills__data">
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>Operating Systems</li>
+                            <li>Database Management</li>
+                            <li>Computer Networks</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="resume__right">
+                <!--========== PROJECTS ==========-->
+                <section class="project section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project__container">
+                        <div class="project__content bd-grid">
+                            <h4 class="project__title">01. Student Grade Management System</h4>
+                            <img src="https://user-images.githubusercontent.com/100013400/210125897-04195a25-f557-44f8-94f3-2013a8399899.png"
+                                alt="01. Student Grade Management System" class="project__img">
+                            <ul class="project__description">
+                                <li><strong>Description:</strong> Developed a Student Grade Management System as a
+                                    course project for U18IT405: Database Management Systems.</li>
+                                <li class="project__info"><strong>Duration:</strong> Mar 2022 - Jun 2022</li>
+                                <li class="project__info"><strong>Role:</strong> Lead Developer (Personal Project)</li>
+                                <li><strong>Code:</strong> <a
+                                        href="https://github.com/BlaiseMariaJames/Student-Grade-Management-System" target="_blank">Github
+                                        code</a></li>
+                                <li><strong>Technologies Used:</strong> C++, SQLite, Code::Blocks</li>
+                                <li><strong>Key Achievements:</strong>
+                                    <ul class="project__features">
+                                        <li>Implemented strong error management to handle runtime errors effectively.
+                                        </li>
+                                        <li>Designed a dynamic and extensible system, allowing for easy upgrades.</li>
+                                        <li>Developed a simple login interface for administrators, faculty, and
+                                            students.</li>
+                                        <li>Supported multiple views for various users (admin, faculty, student).</li>
+                                        <li>Implemented a multi-user system with roles for admin, faculty, and student.
+                                        </li>
+                                        <li>Ensured concurrency support for consistent and durable data changes.</li>
+                                        <li>Conducted experiments and simulations, analyzing results for database
+                                            modifications.</li>
+                                    </ul>
+                                </li>
+                                <li class="project__info"><strong>Results and Analysis:</strong> Made significant changes to
+                                    the database
+                                    structure, improving data organization and retrieval efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="project__content bd-grid">
+                            <h4 class="project__title">02. Yelpcamp 2.0</h4>
+                            <img src="https://res.cloudinary.com/dtwgxcqkr/image/upload/bo_3px_solid_black/v1701283002/YelpCamp%20Related%20Media/Version-2-Media/d673bfxgbmerirrwgcsw.png"
+                                alt="02. Yelpcamp 2.0" class="project__img">
+                            <ul class="project__description">
+                                <li><strong>Description:</strong> Developed YelpCamp Version 2.0, a full-stack web
+                                    application for sharing camping experiences.</li>
+                                <li class="project__info"><strong>Duration:</strong> August 2022 - Feb 2023</li>
+                                <li class="project__info"><strong>Role:</strong> Lead Developer (Personal Project)</li>
+                                <ul style="display: flex; gap: 2rem;"><strong>Version 01:</strong>
+                                    <li><a href="https://github.com/BlaiseMariaJames/YelpCamp-Version-2.0/tree/colt-steele" target="_blank">Github Code</a></li>
+                                    <li><a href="https://blaise-maria-james-yelpcamp-version-colt.onrender.com/" target="_blank">Website Link</a></li>
+                                </ul>
+                                <ul style="display: flex; gap: 2rem;"><strong>Version 02:</strong>
+                                    <li><a href="https://github.com/BlaiseMariaJames/YelpCamp-Version-2.0" target="_blank">Github Code</a></li>
+                                    <li><a href="https://blaise-maria-james-yelpcamp-version-2.onrender.com/" target="_blank">Website Link</a></li>
+                                </ul>
+                                <li><strong>Technologies Used:</strong> Node.js, Express, MongoDB, Bootstrap, Cloudinary,
+                                    Passport, SendGrid</li>
+                                <li><strong>Key Achievements:</strong>
+                                    <ul class="project__features">
+                                        <li>Implemented campground categories, pagination, sorting, and average rating
+                                            features.</li>
+                                        <li>Created user profiles with editing options for name, profile photo, and bio.
+                                        </li>
+                                        <li>Implemented a forgot/reset password mechanism with email support.</li>
+                                        <li>Enhanced authentication by enforcing traditional username and password
+                                            conditions.</li>
+                                        <li>Strengthened styling using Bootstrap and Flex for an improved user interface.
+                                        </li>
+                                        <li>Implemented search and filter features for enhanced user experience.</li>
+                                    </ul>
+                                </li>
+                                <li class="project__info"><strong>Results and Analysis:</strong> Improved the website with
+                                    new features, enhancing user interaction and overall functionality.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certifications">
+                    <h2 class="section-title">Certificates</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h4 class="certificate__title">Python and Django Full Stack Web Developer Bootcamp</h4>
+                            <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-f2f08080-fabe-4fcb-ad5b-ed3562142004.jpg"
+                            alt="The Web Developer Bootcamp" class="certificate__img">
+                            <p class="certificate__organisation"><strong>Certified on: </strong>Udemy</p>
+                            <p class="certification__date"><strong>Issued in: </strong>Dec 2023</p>
+                            <p class="certification__skills"><strong>Skills: </strong>Full Stack Web Development (Python, Django, SQLite3)</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h4 class="certificate__title">The Web Developer Bootcamp 2023</h4>
+                            <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-2221b82c-8f39-48f7-b6b6-312b1fec2234.jpg"
+                            alt="The Web Developer Bootcamp" class="certificate__img">
+                            <p class="certificate__organisation"><strong>Certified on: </strong>Udemy</p>
+                            <p class="certification__date"><strong>Issued in: </strong>Feb 2023</p>
+                            <p class="certification__skills"><strong>Skills: </strong>Full Stack Web Development (Node, Express, a bit of React, MongoDB, Others)</p>
+                        </div>
+                    </div>
+                </section>
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="languages__content bd-grid">
+                        <ul class="languages__data">
+                            <li><b>English</b></li>
+                            <li class="languages__level">Fluent</li>
+                            <li><b>Malayalam</b></li>
+                            <li class="languages__level">Fluent</li>
+                            <li><b>Telugu</b></li>
+                            <li class="languages__level">Fluent</li>
+                            <li><b>Hindi</b></li>
+                            <li class="languages__level">Fluent</li>
+                            <li><b>Tamil</b></li>
+                            <li class="languages__level">Beginner</li>
+                        </ul>
+                    </div>
+                </section>
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">Read</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+    <!--========== MAIN JS ==========-->
+    <script src="Scripts.js"></script>
+</body>
+
+</html>
